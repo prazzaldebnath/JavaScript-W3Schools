@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+<p>6 numbers specify year, month, day, hour, minute and second:</p>
+<p>5 nmbers specify year, month, day, hour, and minute:</p>
+<p>4 numbers specify year, month, day, and hour:</p>
+<p>3 numbers specify year, month, and day:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="dem"></p>
+
+<script>
+    const d = new Date(2018, 11, 24, 10, 33, 30);
+    document.getElementById("demo").innerHTML = d;
+
+    const d2 = new Date(2018, 11, 24, 10, 33);
+    document.getElementById("demo2").innerHTML = d2;
+
+    const d3 = new Date(2018, 11, 24, 10);
+    document.getElementById("demo3").innerHTML = d3;
+
+    const d4 = new Date(2018, 11, 24);
+    document.getElementById("demo4").innerHTML = d4;
+
+    const d5 = new Date(2018, 11);
+    document.getElementById("demo5").innerHTML = d5;
+
+    // you cannot omit a month if is then it will e treated as milliseconds
+    const a = new Date(2018);
+    document.getElementById("dem").innerHTML = a;
+
+</script>
+</body>
+</html>

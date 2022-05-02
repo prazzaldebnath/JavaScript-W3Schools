@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Date.parse()</h2>
+<p>Date.parse() returns the number of milliseconds between the date and January 1, 1970:</p>
+
+<p id="demo"></p>
+
+<h2>JavaScript Date.parse()</h2>
+<p>Date.parse(string) returns milliseconds.</p>
+<p>You can use the return value to convert the string to a date object:</p>
+
+<p id="demo2"></p>
+
+<script>
+    const msec = Date.parse("March 21, 2012");
+    document.getElementById("demo").innerHTML = msec;
+
+    let msec2 = Date.parse("March 21, 2012");
+    const d = new Date(msec2);
+    document.getElementById("demo2").innerHTML = d;
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!--
+  JavaScript const variables must be assigned a value when they are declared:
+
+Meaning: An arrays declared with const must be initialized when it is declared.
+
+Using const without initializing the array is a syntax error:
+
+Example
+This will not work:
+
+const cars;
+cars = ["Saab", "Volvo", "BMW"];
+Arrays declared with var can be initialized at any time.
+
+You can even use the array before it is declared: -->\
+
+<h2>JavaScript Hoisting</h2>
+<p id="demo"></p>
+
+<script>
+    cars = ["Saab", "Volvo", "BMW"];
+    var cars;
+
+    document.getElementById("demo").innerHTML = cars[0];
+</script>
+</body>
+
+</html>

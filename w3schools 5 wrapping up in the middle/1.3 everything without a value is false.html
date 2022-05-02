@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p>Display the Boolean value of 0 and -0:</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+<p id="demo7"></p>
+
+
+<script>
+    let x = 0;
+    let y = -0;
+    let z = "";
+    let a;
+    let b = null;
+    let c = false;
+    let d = 10 / "Hello";
+    //The Boolean value of 0(zero) is false:
+    document.getElementById("demo").innerHTML = Boolean(x);
+    //The Boolean value of -0(minus zero) is false:
+    document.getElementById("demo2").innerHTML = Boolean(y);
+    //The Boolean value of ""(empty string) is false:
+    document.getElementById("demo3").innerHTML = Boolean("");
+    //The Boolean value of undefined is false
+    document.getElementById("demo4").innerHTML = Boolean(a);
+    //The Boolean value of null is false:
+    document.getElementById("demo5").innerHTML = Boolean(b);
+    //The Boolean value of false is(you guessed it) false:
+    document.getElementById("demo6").innerHTML = Boolean(c);
+    //The Boolean value of NaN is false:
+    document.getElementById("demo7").innerHTML = Boolean(d);
+
+
+
+
+
+
+</script>
+</body>
+</html>

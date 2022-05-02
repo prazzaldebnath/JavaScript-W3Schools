@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript</h2>
+
+<p>the value (and the date type) of a variable with no value is <b>undefined</b>.</p>
+<p>Variables can be emptied if you set the value to undefined</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    let car;
+    document.getElementById("demo").innerHTML = car + "<br>" + typeof car;
+
+    let car2 = "Volvo";
+    car2 = undefined;
+
+    document.getElementById("demo2").innerHTML = car2 + "<br>" + typeof car2;
+
+</script>
+</body>
+</html>

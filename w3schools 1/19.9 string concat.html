@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript String Methods</h2>
+
+    <p>The concat() method joins two or more strings:</p>
+
+    <p id="demo"></p>
+    <br />
+    <p id="demo2"></p>
+    <script>
+      let text1 = "Hello";
+      let text2 = "World";
+      let text3 = text1.concat(" ", text2);
+      document.getElementById("demo").innerHTML = text3;
+      //The concat() method can be used instead of the plus operator. These two lines do the same:
+
+      text = "Hello" + " " + "World!";
+      document.getElementById("demo2").innerHTML = text;
+    </script>
+  </body>
+</html>

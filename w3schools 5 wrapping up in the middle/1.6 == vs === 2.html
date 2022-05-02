@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Booleans</h2>
+<p>Booleans and Boolean objects cannot be safely compared.</p>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+    const x = new Boolean(false);
+    const y = new Boolean(false);
+    document.getElementById("demo").innerHTML = (x==y);
+
+    const a = new Boolean(false);
+    const b = new Boolean(false);
+    document.getElementById("demo2").innerHTML = (a === b);
+</script>
+</body>
+</html>

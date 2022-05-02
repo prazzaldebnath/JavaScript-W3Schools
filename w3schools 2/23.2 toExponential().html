@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>JavaScript Number Methods</h2>
+
+    <p>
+      The to Exponential() method returns a string, with the number rounded and
+      written using exponential notation.
+    </p>
+
+    <p>
+      An optional parameter defines the number of digits behind the decimal
+      point
+    </p>
+
+    <p id="demo"></p>
+    <br />
+    <p id="demo2"></p>
+
+    <script>
+      let x = 229.656;
+      document.getElementById("demo").innerHTML =
+        x.toExponential() +
+        "<br>" +
+        x.toExponential(2) +
+        "<br>" +
+        x.toExponential(4) +
+        "<br>" +
+        x.toExponential(6);
+
+      let y = 200000;
+      document.getElementById("demo2").innerHTML = y.toExponential(2);
+    </script>
+  </body>
+</html>

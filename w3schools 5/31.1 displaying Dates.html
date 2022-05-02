@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Date()</h2>
+
+<h2>JavaScript new Date()</h2>
+<p id="demo"></p>
+
+<h2>JavaScript toString()</h2>
+<p>The toString() method converts a date to a string:</p>
+<p id="demo2"></p>
+
+<h2>JavaScript toUTCString()</h2>
+<p>The toUTCString() method converts a date to a UTC string (a date display standard):</p>
+<p id="demo3"></p>
+
+<h2>JavaScript toDateString()</h2>
+<p>The toDateString() method converts a date to a date string:</p>
+<p id="demo4"></p>
+
+<h2>JavaScript toISOString()</h2>
+<p>The toISOString() method converts a date to a date string, using the ISO standard format:</p>
+<p id="demo5"></p>
+
+<script>
+    const d = new Date();
+    document.getElementById("demo").innerHTML = d;
+
+    const d2 = new Date();
+    document.getElementById("demo2").innerHTML = d2.toString();
+
+    const d3 = new Date();
+    document.getElementById("demo3").innerHTML = d3.toUTCString();
+
+    const d4 = new Date();
+    document.getElementById("demo4").innerHTML = d4.toDateString();
+
+    const d5 = new Date();
+    document.getElementById("demo5").innerHTML = d5.toISOString();
+
+</script>
+</body>
+</html>

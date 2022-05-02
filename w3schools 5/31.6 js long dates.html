@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript new Date()</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+
+<script>
+    const d = new Date("Mar 25 2015");
+    document.getElementById("demo").innerHTML = d;
+
+    const d2 = new Date("25 Mar 2015");
+    document.getElementById("demo2").innerHTML = d2;
+
+    const d3 = new Date("January 25 2015");
+    document.getElementById("demo3").innerHTML = d3;
+
+    const d4 = new Date("Jan 25 2015");
+    document.getElementById("demo4").innerHTML = d4;
+
+    const d5 = new Date("JANUARY, 25, 2015");
+    document.getElementById("demo5").innerHTML = d5;
+</script>
+</body>
+</html>

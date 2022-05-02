@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript</h2>
+
+<p>Objects can be emptied by setting the value to <b>null</b>.</p>
+<p id="demo"></p>
+
+<p>Objects can be emptied by setting the value to <b>undefined</b>.</p>
+<p id="demo2"></p>
+
+<script>
+    let person = {firstName: "John", lastName: "Doe", age: 50, eyeColor: "blue"};
+    person = null;
+    document.getElementById("demo").innerHTML = typeof person;
+
+    person = undefined;
+    document.getElementById("demo2").innerHTML = person;
+</script>
+</body>
+</html>
